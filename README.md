@@ -1,5 +1,7 @@
 # Description
 
+For more information, see https://jcuenod.github.io/bibletech/2021/08/16/goaccess-analytics/
+
 ## Systemd Timer/Service
 
 The `analytics.timer` and `analytics.service` files should be located in:
@@ -18,4 +20,3 @@ The `analytics.service` has an output path in the `ExecStart` variable. I point 
 ## GoAccess Settings
 
 The service executes goaccess, which draws its settings from `~/.goaccessrc`. The file is not complicated but a number of settings are worth paying attention to especially the last section entitled "Independently Added". Also, look for settings about the geolite mmdb database.
-

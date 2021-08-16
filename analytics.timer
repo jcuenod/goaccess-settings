@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto update analytics every hour
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+Unit=analytics.service
+
+[Install]
+WantedBy=timers.target

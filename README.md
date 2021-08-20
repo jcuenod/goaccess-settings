@@ -12,7 +12,8 @@ The `analytics.timer` and `analytics.service` files should be located in:
 To start the service (which runs hourly—this can be changed by editing the `OnCalendar` variable in the `analytics.timer` file):
 
 ```
-systemctl --user start analytics.service
+systemctl --user enable analytics.timer
+systemctl --user start analytics.timer
 ```
 
 The `analytics.service` has an output path in the `ExecStart` variable. I point that to a path whose files are served statically so that I can look up recent analytics on my server (e.g. `/var/www/`).
